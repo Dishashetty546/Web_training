@@ -59,6 +59,52 @@ ex:  <ol>
     </ol>
 o/p is in bullets
 
+<div> tag
+Its a container
+Bock level, make a block of content
+Specifically to apply styling in group
+
+<spam>
+to customize specific or small part of a paragraph or header
+
+form tag
+define - action - "/submit"  --> get request
+<input>
+<label>
+
+--------------------get and post Request------------------------
+get is fast, compared to post
+when we have security issues go for get request
 
 
+-----------------Create a form in HTML---------------------------
+----------------Create table in html-----------------------------
+
+
+<table>
+tr - table row
+td - table data
+th - table header 
+tb - table body
+
+ex:
+ <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Lilli</td>
+            <td>Mysore</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ajay</td>
+            <td>Mysore</td>
+        </tr>
+    </tbody>
 
