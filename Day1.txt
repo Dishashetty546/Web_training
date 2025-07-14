@@ -1,0 +1,64 @@
+-Installation
+Node js
+
+-HTML
+-Css
+-Diff b/w library and framework
+-React defination and its features
+-Server and client
+Request form  - HTTP
+
+------------------------------------------------------------------------
+HTML
+
+Basic HTML boiler plat
+Doctype - document type
+<html> - starting and ending of html page
+meta - meta data, this data is not visble to user
+head,body,title... - other tags
+Live server 
+Local host
+Port number
+
+------------------MOST USED HTML TAGS------------------------------------
+<h1>,<h2>.......<h6> - head tags
+<p> - paragraph tag
+
+opening and closing tags
+<br> - space bw 2 tags
+tags have childern
+tag which will have children, will have closing tag
+others will not
+ex: <br>
+
+<hr> -  horizontal line
+<a> - anchor tag, we can create link in web page
+Ex: <a href="https://www.google.com" >Google</a>
+
+Internal Navigation - navigate from one page to another , External Navigation - ex: navigate to another site like google
+href - Hypertext Reference
+
+<img/>
+src= image path
+alt= alternative text
+
+Lists
+ul - unordered list
+li - list items
+ex:
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+
+ol - orderd list
+ex:  <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+o/p is in bullets
+
+
+
+
