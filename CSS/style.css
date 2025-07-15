@@ -17,26 +17,17 @@
 .head3{
     color: darksalmon;
 } */
-.container{
-    /* width:400px;
-    height:400px;
-    padding:20%;
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
     border: 2px solid black;
-    margin: 30px;
-    background-color: rgb(112, 107, 100);
-    align-items: center;
-    display: inline; */
-    display:flex;
-    flex-direction:column-reverse;
-    border:2px;
-    border:2px solid black;
     background-color: rgb(105, 89, 119);
-    gap:40px;
-    padding:20px;
-    margin:40px;
- 
+    gap: 20px;
+    padding: 20px;
 }
-.box
-{
+
+.box {
     background-color: rgb(233, 214, 214);
+    color: chocolate;
+    padding: 20px;
 }

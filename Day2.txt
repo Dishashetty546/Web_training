@@ -153,4 +153,96 @@ jsutify-content horizontally
 align items vertically
 flex wrap
 -----------------------------------------------------------------------------------
+Grid
+display: grid
+grid-template-columns: repeat(2,1fr)
+where 2 is number od columns
+1fr is one part of the whole
 
+-----------------------------------------------------------------------------------
+features-
+make UI responsive
+styling
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+.head {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar .list {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Section */
+.section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Article */
+.article {
+    padding: 20px;
+    background-color: #e7e7e7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Aside */
+.aside {
+    padding: 20px;
+    background-color: #d9edf7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
