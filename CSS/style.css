@@ -1,0 +1,42 @@
+/* h1,p{
+    color: chartreuse;
+    background-color: blue;
+    font-size:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline;
+    text-align:right;
+}
+
+.head1{
+    color:cyan
+
+}
+.head2{
+    color:crimson
+}
+.head3{
+    color: darksalmon;
+} */
+.container{
+    /* width:400px;
+    height:400px;
+    padding:20%;
+    border: 2px solid black;
+    margin: 30px;
+    background-color: rgb(112, 107, 100);
+    align-items: center;
+    display: inline; */
+    display:flex;
+    flex-direction:column-reverse;
+    border:2px;
+    border:2px solid black;
+    background-color: rgb(105, 89, 119);
+    gap:40px;
+    padding:20px;
+    margin:40px;
+ 
+}
+.box
+{
+    background-color: rgb(233, 214, 214);
+}
