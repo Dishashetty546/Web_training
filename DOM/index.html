@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>javascript</h1>
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, magnam?</p>
+    <div>
+        <p>Lorem ipsum dolor sit.</p>
+        <h1>Lorem ipsum dolor sit.</h1>
+    </div> -->
+    <!-- <h1 id="h1" class="head1">hi</h1>
+    <h2 id="h2" class="head1">world</h2>
+    <h3 id="h2" class="head3">its</h3>
+    <h4 id="h2" class="head4">me</h4> -->
+    <!-- <script>
+        let p_obj=document.getElementById("h1");
+        console.log(p_obj);
+        p_obj.style.color="red";
+
+    </script> -->
+<!------------------------------------------------------------------------------------------------>  
+    <!-- <script>
+        let h_obj=document.getElementsByClassName("head1");
+        console.log(h_obj);
+        h_obj.style.color="red";
+    </script> -->
+
+    <!-- <script>
+        let h_obj= getElementByTagName("h1")
+console.log(h_obj);    </script> -->
+<!----------------------------------------------------------------------------------------------------->
+<!-- <script>
+    let obj= document.querySelector(".head1");
+    console.log(obj);
+</script> -->
+<!----------------------------------------------------------------------------------------------------------------->
+<!-- <script>
+    let obj= document.querySelectorAll("head1")
+    console.log(obj)
+</script> -->
+
+<h1 class="head1">Welcome to my page:</h1>
+<a id="uri" href="https://www.google.com">Google</a>
+<br>
+<button onClick="handleClick()">Get</button>
+<button onClick="setAttr()">Set</button>
+
+<script>
+  function handleClick() {
+    let obj = document.getElementById("uri");
+    let value = obj.getAttribute("href");
+    console.log(value); 
+  }
+
+  function setAttr(){
+    let obj= document.getElementById("uri");
+    obj.setAttribute("href","https://www.facebook.com")
+  }
+</script>
+
+</body>
+</html>
