@@ -38,7 +38,7 @@ display["disha"];
 function which doesnt have any name, they are initialized by a variable
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 Arrow function?
-mdersn and stortest way to create a function in js using Arrow
+mders and stortest way to create a function in js using Arrow
 ex:
 let d=(name)=>{
     console.log("Welcome:",name)
@@ -58,6 +58,10 @@ ex:
 setTimeout(()=>{
     console.log("Hello");
 },2000)
+
+//it will receive 2 parameters
+-arrow function
+-time 
 //op: after 2s, hello get printed
 ---------------------------------------------------------------------------------------------------------------------
 Callback function?
@@ -245,3 +249,4 @@ ex:
   }
   
 </script>
+---------------------------------------------------------------------------------------------------------------------------
