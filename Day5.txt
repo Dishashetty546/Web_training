@@ -7,7 +7,7 @@ IMPORT AND EXPORT FUNCTIONS IN JS?
 -In curly braces we use import 
 
 ex:
-*******************Method 1********************************************************************
+*******************Method 1********************************************************************************************************************
 Exports ?
 export function add(x,y){
     return x+y;
@@ -90,10 +90,10 @@ Solution
 2  Promise - 
 - it is one of ES6 features
 - That may avaible now,later or never
-- There are 3 stages
+- There are 3 states
 * Pending
 * Resolve
-* Rejected
+* Reject
 
 Later - Pending
 Resolve - now
@@ -131,19 +131,20 @@ steps
 -------------------------------------------------------------------------------------------------------------------------------------
 ES6(ECMA Script 2025)
 - Let and const
+- For in and for of
 - Arrow Function
 - Template literals
 - promise
 - Array destruction
 - Spread Operator
 - Rest Operator
-- Class
+- Class and object
 - Map in JS
 - Set in JS
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Template litrals?
 
-terals delimited with backtick ( ` ) characters, allowing for multi-line strings, string interpolation with embedded expressions,
+Literals delimited with backtick ( ` ) characters, allowing for multi-line strings, string interpolation with embedded expressions,
 and special constructs called tagged templates.
 Built by the combination of {}, $ and back tick(``)
 
@@ -223,7 +224,7 @@ set.add(30);
 set.add(50);
 console.log(set);
 
--------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <style>
+    
         body {
             font-family: Arial, sans-serif;
             background: rgb(127, 127, 199);
@@ -75,19 +76,21 @@
         <ul id="taskList"></ul>
     </div>
     <script>
-        const TaskInput= document.getElementById('taskInput')
-        const TaskList= document.getElementById('taskList')
-        function addTask(){
-            const Task = TaskInput.value()
-            if(Task != '')
-        {
-            const Content = TaskInput.CreatElement(TaskInput);
-            content.append();
-            
+const TaskInput = document.getElementById('taskInput');
+const TaskList = document.getElementById('taskList');
 
-        }
+function addTask() {
+    const task = TaskInput.value.trim(); 
 
-        }
+    if (task !== '') {
+        const li = document.createElement('li'); 
+        li.textContent = task; 
+        TaskList.appendChild(li);
+
+        TaskInput.value = '';
+    }
+}
+
 
         
     </script>
