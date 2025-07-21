@@ -6,8 +6,8 @@ create
  const 
 
  scope of variables
- local scope - var
- global scope - let 
+ local scope - var - functional scope
+ global scope - let and const 
 
  if we use let it has local scope, and try to access globally
  we get this error

@@ -2,21 +2,22 @@ REACT - INTRODUCTION
 
 -is a single page application
 -Its a js library
--which uses component based architecture
+-which uses   component based architecture
 -user interface is broken into small and reusable interface
 -These makes them reusable
 -lighweight
 -Used to build user interface
 -Its an open source
 -primaryly created and maintained by facebook
--Large web application that can update and render pages depending on interaction
+-Large web application that can update and render pages depending on interaction.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Features of react?
 -Declarative UI - when data gets changed what changes happens on UI, we have to explain what we want.
 -Component Based - Encapsulate logic and layout in reusable component.
 -Virtual DOM - To optimize the update and minize direct manipulation.
 -Unidirectional Data flow - Data will flow only in one direction from parent to child
--String Ecosystem - Large number of tools and community support
+-Strong Ecosystem - Large number of tools and community support
 
 Ex: whatsapp, facebook...etc
 ----------------------------------------------------------------------------------------------------------------------------------------------------
