@@ -4,6 +4,7 @@ import './App.css'
 // import Store from './Store.jsx';
 // import Paragraph from './Paragraph.jsx';
 import Change from './Change.jsx';
+import Buttons from './Buttons.jsx'
 function App() {
   function handleClick() {
     alert("Function from parent component");
@@ -15,7 +16,7 @@ function App() {
       <Card onClick={handleClick} label="click me" /> */}
       {/* <Store/> */}
       {/* <Paragraph/> */}
-      <Change/>
+      <Buttons/>
       
     </>
   )
