@@ -1,0 +1,71 @@
+LIST & KEY 
+LIST 
+Collection of items, usaually stored inside an array
+when we want to render dynamically
+
+KEY 
+special string attribute that need to be icluded when we are creating a list of elements
+helps react to identify, hwich item has been changed, added, or removed
+Key should be unique among all.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ex:
+Display City names list
+function FirstList() {
+    const city = ["Mangalore", "Udupi", "Kundapura", "Bangalore"];
+    return (
+        <div>
+            <h1>City List :</h1>
+            {
+                city.map(c_name =><p>{c_name}</p>)
+            }
+        </div>
+    );
+}
+export default FirstList; 
+
+//This throws error in console
+Each child in a list should have a unique "key" prop.
+Check the render method of `div`. It was passed a child from FirstList. See https://react.dev/link/warning-keys for more information.
+
+To resolve this, we should use Key for our lists
+Where each item given with unique key
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a CourseList using UseState implement delete Course
+
+import { useState } from "react";
+function  CourseList(){
+    const [ Course, setCourse]= useState([
+        {id:111, name: "Java"},
+        {id:112, name:"react"},
+        {id:113, name: "javascript"}
+    ])
+    const handleDeleteButton=(id)=>{
+        const newCourse= Course.filter((c)=> c.id !==id);
+        setCourse(newCourse);
+    }
+    return(
+    <div>
+        <h1>Course List :</h1>
+         {
+            Course.map((c)=>{
+                return(
+            <div key={c.id} > {c.name} <button onClick={()=>handleDeleteButton(c.id)}>Delete</button></div>)
+            })
+         }
+    </div>
+    )
+}
+export default CourseList;
+
+steps
+-Create a UseState, for the changing the states
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create Student Table List using map
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BOOTSTRAPE
+
+Installation
+-npm install react-bootstrap bootstrap

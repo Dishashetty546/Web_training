@@ -74,7 +74,7 @@ OnkeyUp keyword - when we pressed and then released the key, then this event occ
 on just clicking the key, will not make change.
       <h2>Keyboard Event</h2>
         <h2>Enter :</h2>
-        <input type="text" onKeyDown={handleKey}/>
+        <input type="text" OnkeyUp={handleKey}/>
     </div>
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 When we want the event occur, when we click on 1 particular key
