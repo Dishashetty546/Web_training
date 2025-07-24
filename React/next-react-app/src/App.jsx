@@ -12,7 +12,10 @@ import './App.css'
 // import TableList from './component/TableList';
 // import 'bootstrap/dist/css/bootstrap-min-css';
 // import BootstrapeTable from './component/Bootstrape/BootstrapeTable';
-import NameList from './component/NameList.jsx';
+// 
+// import LifecycleFirst from './Lifecycle_Component/LifecycleFirst.jsx'
+// 
+import LifecycleThird from './Lifecycle_Component/LifecycleThird';
 function App() {
   // function handleClick() {
   //   alert("Function from parent component");
@@ -31,6 +34,9 @@ function App() {
       {/* <CourseList/> */}
       {/* <TableList/>
       <BootstrapeTable/> */}
+      {/* <LifecycleFirst/> */}
+      {/* <LifeCycleSecond/> */}
+      <LifecycleThird/>
       
     </>
   )
