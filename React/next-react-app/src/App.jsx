@@ -15,7 +15,19 @@ import './App.css'
 // 
 // import LifecycleFirst from './Lifecycle_Component/LifecycleFirst.jsx'
 // 
-import LifecycleThird from './Lifecycle_Component/LifecycleThird';
+// import LifecycleThird from './Lifecycle_Component/LifecycleThird'; 
+// import LifecycleThird from './Lifecycle_Component/LifecycleThird';
+// import FirstComp from './Hooks/FirstComp.jsx';
+// import SecondComm from './Hooks/SecondComp';
+// import ThirdComm from './Hooks/ThirdComm.jsx';
+// import FourthComm from './Hooks/FourthComm';
+// import FifthComp from './Hooks/FifthComp';
+// import SixthComm from './Hooks/SixthComp';
+// import Child from './Hooks/child'
+// import Parent from './Hooks/Parent.jsx';
+import FirstCounter from './custom_hook/FirstCounter';
+import SecondCounter from './custom_hook/SecondCounter';
+import ThirdCounter from './custom_hook/ThirdCounter';
 function App() {
   // function handleClick() {
   //   alert("Function from parent component");
@@ -36,8 +48,17 @@ function App() {
       <BootstrapeTable/> */}
       {/* <LifecycleFirst/> */}
       {/* <LifeCycleSecond/> */}
-      <LifecycleThird/>
-      
+      {/* <LifecycleThird/> */}
+      {/* <FirstComp/> */}
+      {/* <SecondComm/> */}
+      {/* <ThirdComm/> */}
+      {/* <FourthComm/> */}
+      {/* <FifthComp/> */}
+      {/* <SixthComm/> */}
+      {/* <Parent/> */}
+      <FirstCounter/>
+      <SecondCounter/>
+      <ThirdCounter/>
     </>
   )
 }

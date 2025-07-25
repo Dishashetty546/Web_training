@@ -1,0 +1,82 @@
+HOOKS 
+
+Special type of function, to use state and other functions in your function component without creatng class component.
+All hooks are created with same prefix 'use'
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Types of hooks
+
+useState
+useEffect
+useMemo
+useRef
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+useState HOOK
+
+To get state inside a functional component
+This is a container, which tracks the changes in react component
+
+
+Without state
+-Any modification made will not be tracked by react
+-Component will not be able to render the updated state
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example
+
+import React, { useState } from "react";
+
+function FirstComp() {
+  const [count, setCount] = useState(0);
+
+  function increment() {
+    setCount(prevCount => prevCount + 1);
+    console.log(`Count: ${count}`);
+  }
+
+  return (
+    <div>
+      <h1>Functional Component With State</h1>
+      <h1>Count: {count}</h1>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+}
+
+export default FirstComp;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+useEffect HOOK
+
+-We can write sideeffects in functional components 
+-when the component is updating, unmounting
+
+UseEffectwill replace all this with single function:
+
+ComponentDidMount()
+ComponentDidUpdate()
+ComponentWillUnmount()
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax
+useEffect(()=>{}, an array of dependency)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+It works same as WillMount in class component
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+useMemo HOOK
+react hook , that memorize the result of expensive function
+expensive function - which is tking more time and resources to exicute
+And only re-computes when its dependency changes
+
+Syntax
+const name= useMemo(()=>{}, dependency array)
+
+-if we do not use useMemo
+-It will not remember the function and result
+-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UseRef HOOK
+that returns a mutable reference object, which persist across the renders
+used to get reference of DOM element
+Access DOM elementstore previous value
+while re-render and update

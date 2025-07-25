@@ -13,7 +13,7 @@ steps / methods called
 Constructor() - we initialize the state and bind the methods
 static getDerivedStateFromProps() - sink state with props
 render() - return a JSX, user interface
-componentDidMount() - run our sideeffects
+componentDidMount() - when component done mouning, run our sideeffects - subscriptions, Timers
 -------------------------------------------------------------------------------------------------------------------------------------------------
 Updating
 -Component will get updated due to state and prop changes
@@ -32,3 +32,5 @@ steps / methods
 componentsWillUnmount() - here we will cleanup out our timer, basically a cleanout task
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
