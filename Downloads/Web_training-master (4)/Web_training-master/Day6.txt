@@ -1,0 +1,140 @@
+REACT - INTRODUCTION
+
+-is a single page application
+-Its a js library
+-which uses   component based architecture
+-user interface is broken into small and reusable interface
+-These makes them reusable
+-lighweight
+-Used to build user interface
+-Its an open source
+-primaryly created and maintained by facebook
+-Large web application that can update and render pages depending on interaction.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Features of react?
+-Declarative UI - when data gets changed what changes happens on UI, we have to explain what we want.
+-Component Based - Encapsulate logic and layout in reusable component.
+-Virtual DOM - To optimize the update and minize direct manipulation.
+-Unidirectional Data flow - Data will flow only in one direction from parent to child
+-Strong Ecosystem - Large number of tools and community support
+
+Ex: whatsapp, facebook...etc
+----------------------------------------------------------------------------------------------------------------------------------------------------
+INSTALLATION
+CRA - create react app
+NPX - node package exicutor
+
+- terminal - npx create-react-app reactApp
+- installing - react, react-dom 
+
+** React dom is build on top of react
+-------------------------------------------------------------------------------------------------------------------------------------
+NODE_MODULES
+-all installed npm packages
+-Which is needed to run a react project
+
+PUBLIC
+-files in this is directly access in root URL 
+-index.html - single HTML page that get exicuted in react page, so it is called as single page application
+-manifest.json - progressive web app features
+-we can only put assets folder here
+
+SRC 
+-source folder
+-Inside this we do components
+-index.js is entry point of react app
+
+PACKAGE.json
+-Dependencies - react,react dom
+-scripts - shortcuts, start cammand, build cammand
+
+Build in package.json
+-browser dont understands react, it only understands htmk,css,js
+-react-scripts build - conversion from react to browser understandable from
+
+test 
+-used to test
+---------------------------------------------------------------------------------------------------------------------------
+
+App.js
+-it should have 1 root element
+-under root parent element, it can return child elements
+
+----------------------------------------------------------------------------------------------------------
+Diff b/w react and vite tool
+react - has node NODE_MODULES 
+      - npm start - because in package.json
+      - index.html is inside src folder
+      - we use react dom
+      - In react, it downloads all the packages using node modules, it can take more time to render
+      - files are in .js
+      - React component can be .js or .jsx
+
+vite - doesnt have NODE_MODULES , we have to create by npm install 
+     - here we use npm run dev
+     - index.html is outside src folder
+     - there is no file index.js in vite tools
+     - main.jsx is entry point
+     - dont use react dom
+     - In vite tool, it downloads only necessary dependencies to run web, it takes less
+      time to render
+     - files are in .jsx - js + html
+     - component should be .jsx
+
+-------------------------------------------------------------------------------------------------------------------
+JS class / function is called as react component
+react file returns jsx 
+-----------------------------------------------------------------------------------------------------------------------------
+COMPONENTS IN JS
+- breaking the user interface into small parts - called as components
+- this makes reusabl
+- light weight
+
+
+TYPES OF COMPOMENTS
+-Function conpoenents
+-Class components
+
+
+FUNCTION COMPONENTS
+- Which is created by function keyword
+- Modern way to create a component
+steps
+- create a new file
+- inside file create a function, export the function
+- use import in main.jsx to render in react page
+ex:
+function Third(){
+    return(
+        <>
+        <h1>Hello</h1>
+        </>
+    )
+}
+export default Third;
+
+
+CLASS COMPONENTS
+- which uses 
+- older way to create component
+steps
+-Create a new file
+-import react and Component from 'react'
+-use render()
+-return the XML
+-export 
+
+ex:
+import React,{Component} from 'react'
+class Fourth extends Component{
+    render(){
+        return(
+            <div>
+            <h1>Class Based Component</h1>
+            </div>
+        )
+    }
+}
+export default Fourth;
+-----------------------------------------------------------------------------------------------------------

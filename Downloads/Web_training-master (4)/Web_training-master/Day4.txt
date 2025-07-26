@@ -1,0 +1,252 @@
+Function?
+A set of lines of program which performs specific task is termed as function
+ex:
+ function display(){
+     console.log("Hello")
+     console.log("world")
+     console.log("my self disha")
+ }
+ display()
+ --------------------------------------------------------------------------------------------------------------------------------------------------------
+Callback ?
+call the function by function name
+ex: 
+display()
+-------------------------------------------------------------------------------------------------------------------------------------------
+Parameterized function?
+passing parameters inside function
+function add(a,b)
+{
+    console.log(a,b);
+}
+add(1,2)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Name function?
+function add(a,b)
+{
+   return a+b;
+}
+let res=add(1,2);
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Anonymous fnction?
+let display = function(name){
+    console.log("Welcome: ",name);
+
+}
+display["disha"];
+
+function which doesnt have any name, they are initialized by a variable
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Arrow function?
+mders and stortest way to create a function in js using Arrow
+ex:
+let d=(name)=>{
+    console.log("Welcome:",name)
+}
+d("Ajay");
+-----------------------------------------------------------------------------------------------------
+Function Expression?
+const greet = function(name) {
+    return "Hello, " + name + "!";
+};
+
+console.log(greet("Alice"));
+--------------------------------------------------------------------------------------------------------------
+SetTimeout?
+its giving timig for the function to exicute
+ex:
+setTimeout(()=>{
+    console.log("Hello");
+},2000)
+
+//it will receive 2 parameters
+-arrow function
+-time 
+//op: after 2s, hello get printed
+---------------------------------------------------------------------------------------------------------------------
+Callback function?
+function passed s argument to another function 
+ex: 
+function d(name,callback)
+{
+console.log("Welcome",name)
+callback()
+}
+function b(){
+    console.log("Hello");
+}
+d("disha",b);
+
+calling a function as another parameter in a function call is termed as callback function
+--> add callback as parameter in first function
+--> then  add callback() 
+-------------------------------------------------------------------------------------------------------------------
+Default Parameter?
+when we do not pass anything as an argument, function will display a default value
+ex: function dp(name)
+{
+    console.log(name);
+}
+dp()
+------------------------------------------------------------------------------------------------------------------
+Nested function?
+function inside another function
+--------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+Objects?
+where we can store data in the form of key and value is termed as objects
+ex:
+let e={
+    id:24566,
+    name:"Disha",
+    city:"Udupi"
+}
+console.log(e)
+console.log(e.name);
+console.log(e['name'])
+e.s=5000;
+console.log(e);
+
+o/p: { id: 24566, name: 'Disha', city: 'Udupi' }
+updated
+--------------------------------------------------------------------------------------------------------------------
+Object destructuring?
+extracting from an object and storing in variable is called destructuring
+--------------------------------------------------------------------------------------------------------------------
+ES6 faetures introduced?
+let and const
+destructuring function
+arrow function
+Promises
+------------------------------------------------------------------------------------------------------------------
+DOM 
+document object model
+This allows to convert web page to tree like structure
+
+lets say,
+HTML code made of
+               - <html> -
+   - <header> -          - <body> -
+  - <title>              - <p>   <div>   <h1> -
+
+  This gives a clear representation of data or web pages
+----------------------------------------------------------------------------------------------------------------
+DOM selectors?
+Method in JS
+help us to select HTML element from web page
+That's why we can manipulate data,read,write data
+1. getElementByID()
+- it an access elements by single ID
+
+ex:
+<script>
+        let p_obj=document.getElementById("h1");
+        console.log(p_obj);
+        p_obj.style.color="red";
+
+</script>
+----------------------------------------------------------------------------------
+2. getElementByClassName()
+
+o/p:
+HTMLCollection { 0: h1#h1.head1
+, length: 1, … }
+​
+0: <h1 id="h1" class="head1">​
+h1: <h1 id="h1" class="head1">
+​
+length: 1
+<prototype>: HTMLCollectionPrototype { item: item(), namedItem: namedItem(), length: Getter, … }
+
+program:
+    <script>
+        let h_obj=document.getElementsByClassName("head1");
+        console.log(h_obj);
+    </script>
+-----------------------------------------------------------------------------------------------------------------------------
+3. getElementByTagName()
+    <script>
+let h_obj= getElementByTagName("h1")
+console.log(h_obj); 
+</script>
+-------------------------------------------------------------------------------------------------------------------------  
+4. QuerySelector()
+It selects only one
+If we gave className- head1, if many tags having same className
+then it will return only 1st element
+<script>
+    let obj= document.querySelector(".head1");
+    console.log(obj);
+</script>
+------------------------------------------------------------------------------------------------------------
+5.querySelectorAll()
+
+It will give list of all the elements
+NodeList []
+​
+length: 0
+​
+<prototype>: NodeListPrototype { item: item(), keys: keys(), values: values(), … }
+
+-------------------------------------------------------------------------------------------------------------------------
+Pre defined Functions in JS
+1. getAttribute
+- get attribute of a particular element
+----------------------------------------------------------------------------------------------------------------------------------
+2. setAttribute
+- Set the attribute value of a particular element
+------------------------------------------------------------------------------------------------------------------------------------
+EX:
+<script>
+  function handleClick() {
+    let obj = document.getElementById("uri");
+    let value = obj.getAttribute("href");
+    console.log(value); 
+  }
+</script>
+---------------------------------------------------------------------------------------------------------------------------------------------
+ex:
+ function setAttr(){
+    let obj= document.getElementById("uri");
+    obj.setAttribute("href","https://www.facebook.com")
+  }
+</script>
+-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+Features of ES6 of JS version
+-Let keyword
+-Const keyword
+-Arrow function
+-Default variable
+-promises
+-----------------------------------------------------------------------------------------------------------------------
+Creating a toggle bulb and button steps
+1. Download images
+2. Create buttons - with OnClick and id for a button
+3. create a script tag, to create functions for TurnOn and Turnoff
+4. TurnOn ->  getElementById
+setAttribute -> using src and href
+5. TurnOff -> setAttr to toggle 
+
+ex:
+<h1 class="head1">Welcome to my page:</h1>
+
+<img id="bulb" src="On_bulb.PNG" alt="Light Bulb">
+
+<br><br>
+
+<button id="b1" onclick="turnon()">Turn on</button>
+<button   onclick="turnoff()">Turn off</button>
+<script>
+  function turnon() {
+    let bulb = document.getElementById("bulb");
+    bulb.setAttribute("src", "On_bulb.PNG");
+
+}
+  function turnoff() {
+    let bulb = document.getElementById("bulb");
+    bulb.setAttribute("src", "Off_bulb.PNG");
+  }
+  
+</script>
+---------------------------------------------------------------------------------------------------------------------------

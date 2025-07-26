@@ -1,0 +1,13 @@
+CONTEXT API
+
+-its a globals storage
+-That can be shared to all the components
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Need of context API?
+
+when we want to pass data from first to last component
+During this phase, we need to drill through all the components
+This is termed as props drilling
+
+To solve this we need Context API
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

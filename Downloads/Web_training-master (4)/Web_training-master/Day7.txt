@@ -1,0 +1,78 @@
+PROPS 
+-stands for properties
+-pass any data from one component to another Component
+-Pass data from parent to child - unidirectional data flow - use PROPS
+-------------------------------------------------------------------------------------------------------------------------
+steps:
+-create a function
+-pass props as parameter
+-On the main.jsx, update
+-use props.name, props.City
+----------------------------------------------------------------------------------------------------------------------------
+ex:
+function Card(props){
+    return(
+        <div>
+        <h2>HELLO WORLD {props.name}</h2>
+        <p>Where are you now? {props.city}</p></div>
+    )
+}
+export default Card;
+-----------------------------------------------------------------------------------------------------------------------------
+Points
+-we cant change props inside child elements
+-child components - read only
+-Unidirectional data flow from parent to child component
+-prop helps make component reusable, same component with diff data
+-Props can be of any type - number, string, array, function...etc
+---------------------------------------------------------------------------------------------------------------------------------
+Prop destructuring
+In child Component
+instead of passing - props
+use - name, city 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+STATE 
+-Is a container in react, in which we can store something whose value can be tracked by user
+-Its a built in object in react
+-That lets our component remember value overtime
+
+-State in JavaScript is essential for building dynamic and interactive applications because it allows an application to remember and manage data that
+changes over time. Without state, an application would be static and unable to respond to user interactions or
+external data changes
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+StrictMode
+-will render the page twice
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+steps
+-Import useState
+-create a const data, setdata
+-updated is stored in setdata variable
+
+ex:
+import { useState } from "react";
+const [data, setData] = useState(10);
+
+//updated
+setData(30);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Instead of creating new function {update}
+we can use this,
+ex:
+    return (
+        <div>
+<h1>Counter:{count}</h1>
+            <button onClick={()=>{
+                setcount(count+1)
+            }}>Increment</button>
+        </div>
+    )
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Conditional Rendering - based on some conditions, Rendering the paragraph, components,....etc
+Ex:
+Steps to create a toggleparagraph
+Toggle Bulb
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+

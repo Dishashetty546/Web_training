@@ -1,0 +1,241 @@
+IMPORT AND EXPORT FUNCTIONS IN JS?
+
+-To use a function from another file 
+-we use export and Import
+-import function in the file we want to use that function
+-export the function which we want to use
+-In curly braces we use import 
+
+ex:
+*******************Method 1********************************************************************************************************************
+Exports ?
+export function add(x,y){
+    return x+y;
+}
+export function sub(x,y){
+    return x-y;
+}
+export function product(x,y){
+    return x*y;
+}
+
+Imports?
+import {add} from './script.js'
+import {sub,product} from './script.js'
+let res=add(!0,20);
+let res1= sub(10,20);
+let res2= sub(20,30);
+console.log("Result:",res);
+console.log("Result:",res1);
+console.log("Result:",res2);
+
+*************************Method 2**********************************************************************
+Using default export, when we are importing only one function
+ex:
+ function add(x,y){
+    return x+y;
+}
+export default add;
+
+import add from './script.js'   //no need of curly braces
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+ASYNCHRONOUS PROGRAMMING?
+
+* Synchronous program
+-all tasks are exicuting one after another
+-at a time only one task can get exicuted 
+-In a synstamatic order
+-From top to bottom
+ex:
+console.log("a);
+console.log("b);
+console.log("c);
+//ouput: 
+a 
+b 
+c
+
+* Asunchronous program
+-Execute More then one task at a same time with the help of ASYNCHRONOUS
+-Running multiple programs
+ex: console.log("Program eecuting");
+setTimeout(()=>{
+    console.log("Fetching data from API")
+    },2000)
+console.log("Closing an application")
+
+//ouput:Program eecuting
+Closing an application
+Fetching data from API
+------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+Back Tick - Introduced in ES6 -----> ` `
+
+what is the problem  do we have asynchrnous function?
+callbacks are used in asynchronous functions in JavaScript primarily to handle the results 
+of operations that do not complete immediately. JavaScript is single-threaded, meaning it 
+can only execute one task at a time. If a long-running operation, such as a network request
+or file I/O, were to block the main thread, the entire application would become unresponsive.
+
+Solution
+-callback
+-promises
+-async await
+
+-----------------------------------------------------------------------------------------------
+1. Callback - Passing function as an argument in another function
+-------------------------------------------------------------------------------------------------------
+2  Promise - 
+- it is one of ES6 features
+- That may avaible now,later or never
+- There are 3 states
+* Pending
+* Resolve
+* Reject
+
+Later - Pending
+Resolve - now
+Reject - never
+
+steps
+- we have to return new object
+return new promise(resolve,reject)=>{
+
+}
+
+- put a function inside this
+- if the error isnt present,resolve
+- else reject with  error message
+
+-outside the return statement
+-Use then - catch
+- If it is resolved then exicute gerData
+- else reject , then display errors
+- then will use error = true, to check for errors in console
+
+--------------------------------------------------------------------------------------------------------------------------------
+3. Async await
+
+more easy to build
+built on the top of promise
+Async - make a function return a promise
+await - first promise should be resolved and then whatever needed will get exicuted
+
+steps 
+- create a new function named start - make it async
+- createData should be await
+-  call the function at the end   
+
+-------------------------------------------------------------------------------------------------------------------------------------
+ES6(ECMA Script 2025)
+- Let and const
+- For in and for of
+- Arrow Function
+- Template literals
+- promise
+- Array destruction
+- Spread Operator
+- Rest Operator
+- Class and object
+- Map in JS
+- Set in JS
+---------------------------------------------------------------------------------------------------------------------------------------------
+Template litrals?
+
+Literals delimited with backtick ( ` ) characters, allowing for multi-line strings, string interpolation with embedded expressions,
+and special constructs called tagged templates.
+Built by the combination of {}, $ and back tick(``)
+
+ex:
+console.log(`My name is ${name}`);
+-------------------------------------------------------------------------------------------------------------------------------------------
+Array destruction ?
+getting elements fom an array and assigning them to variable
+ex:
+let num= [10,20,30,40];
+let[x,y,z]= num;
+console.log(x);
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Spread Operator in JS ?
+represented by Three dots [...]
+we can  destructureing of array elements
+apart from old array, whil creating new array we can have elements of old array alo add more 
+ex:
+let num= [10,20,30,40];
+let second_num=[...num,50,30]
+console.log(num)
+console.log(second_num)
+
+o/p:
+Array(4) [ 10, 20, 30, 40 ]
+scriptone.js:17:9
+Array(6) [ 10, 20, 30, 40, 50, 30 ]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Rest Operator in JS?
+used collect multiple elements in single array or object
+
+collect multple names and make a single array or object
+ex:
+function display(...names)
+{
+    console.log(names)
+}
+display("Disha","shetty","Udupi");
+
+o/p: Array(3) [ "Disha", "shetty", "Udupi" ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class in JS ?
+That provides a cleaner, more structured way to create objects.
+ex:
+class employee{
+    constructor(name){
+        this.name= name;
+    }
+    greet(){
+        console.log(`welcome to ${name}`)
+    }
+}
+let emp= new employee("Radha")
+emp.greet();
+--------------------------------------------------------------------------------------------------------
+Map in jS?
+Collection of data with key value
+
+ex: let map = new Map()
+map.set("id","123");
+map.set("name","disha");
+map.set("city","Mangalore");
+console.log(map.get("id"), map.get("name"),map.get("city"));
+-------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+SET in JS?
+collection of element by that allows you to store unique values of any type
+
+let set= new Set();
+set.add(10);
+set.add(20);
+set.add(30);
+set.add(50);
+console.log(set);
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
