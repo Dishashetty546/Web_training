@@ -1,0 +1,21 @@
+LOCAL STORAGE AND SESSION STORAGE
+
+LOCAL STORAGE
+-Browser based storage, where we storage our data in the form of keys and values
+-After refreshing our page, that data will be available
+-Data is stored in the form of string format
+-Data size approx 5MB
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+METHODS IN LOCAL STORAGE
+-getitem() - get a particular data from the storage
+-setitem() - insert a partiicular item and store them 
+-removeitem() - remove particular item from local storage
+-clearitem() - remove whatever item from local storage
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JSON.stringify() - converts js object to json string
+
+.parse - json string back to js object
+------------------------------------------------------------------------------------------------------------------------------------------
+SESSION STORAGE
+-
+

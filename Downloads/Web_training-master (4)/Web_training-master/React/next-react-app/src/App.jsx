@@ -25,8 +25,13 @@ import './App.css'
 // import SixthComm from './Hooks/SixthComp';
 // import Child from './Hooks/child'
 // import Parent from './Hooks/Parent.jsx';
-import Firstcomponent from './context_component/contextapi';
+// import UserContext from './context_component/userContext.jsx';
+// import Firstcomponent from './context_component/contextapi';
+// import Newone from './context_component/newone.jsx';
 
+// import { newone, NewoneProvider } from './context_component/newone';
+// import KingContext from './context_component/kingContext';
+import Localstorage from './storage/Localstorage';
 // import FirstCounter from './custom_hook/FirstCounter';
 // import SecondCounter from './custom_hook/SecondCounter';
 // import ThirdCounter from './custom_hook/ThirdCounter';
@@ -58,7 +63,17 @@ function App() {
       {/* <FifthComp/> */}
       {/* <SixthComm/> */}
       {/* <Parent/> */}
- < />
+ {/* < Firstcomponent/> */}
+ {/* <UserContext.Provider value={{username: "Disha shetty"}}>
+ <div>
+ <Firstcomponent/>
+ </div>
+ </UserContext.Provider> */}
+ {/* <NewoneProvider>
+  <KingContext/>
+ </NewoneProvider> */}
+ <Localstorage/>
+
     </>
   )
 }

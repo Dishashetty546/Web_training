@@ -48,7 +48,7 @@ export default FirstComp;
 useEffect HOOK
 
 -We can write sideeffects in functional components 
--when the component is updating, unmounting
+-when the component is updating, unmounting 
 
 UseEffectwill replace all this with single function:
 
@@ -72,7 +72,7 @@ const name= useMemo(()=>{}, dependency array)
 
 -if we do not use useMemo
 -It will not remember the function and result
--
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 UseRef HOOK

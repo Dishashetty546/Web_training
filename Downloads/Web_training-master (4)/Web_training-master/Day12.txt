@@ -11,3 +11,25 @@ This is termed as props drilling
 
 To solve this we need Context API
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Context API important topics:
+
+Create context method
+Contain provider
+use context
+
+Create context Method : we can create a global context storage
+Contain provider : provider asks for value and childeren, value, chidren we put into our provider
+Use context - purpose is to get value from storage
+
+createContext()
+provider : value, children
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HOOK
+useContext
+
+Three contents while creating a useContext
+-Createing a context method
+-Provider - with value and key
+-UserContext
