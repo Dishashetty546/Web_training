@@ -1,0 +1,33 @@
+React routing
+Sending data from one page to another page
+Navigate from one page to another page, without reloading the page
+
+In single page application, smoothly switch b/w the pages
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+npm install react-router-dom
+
+Three dependencies
+Browser router - parent component, that sink our user interface with current UI, which wraps the entire UI
+Routes - container having multiple routes, container for all route
+Route - here we can define,  which UI, which component need to be exicuted, Url hitted, which component need to rendered is done by route
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Outlet
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+useParams hook
+Is a hook in js, which allows us to dynamically access the string from the url to functional components
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Links - create link like an anchor tag
+Navlink - implement navbar with advanced css / style parts
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nested routes
+where we have a parent component, child component, we can navigate from one part  to another inside same components
+one parent component , we can have multiple child components
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Search Param hook
+-Its a URL query parameter 
+-A value after question mark in URL
+-also called as query filter URL( uniform resource locator)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------

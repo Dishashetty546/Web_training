@@ -1,0 +1,92 @@
+EVENT
+actions performed on browser is termed as event
+------------------------------------------------------------------------------------------------------------------------
+Types or examples of an event
+ -Button click
+ -Input feild
+ -Form submission
+ -Mouse Event
+ -Key events
+------------------------------------------------------------------------------------------------------------------------
+ ** BUTTON click
+ ex:
+         <div>
+        <h2>First event</h2>
+        <button onClick={handleClick}>Click</button>
+        </div>
+        <div>
+-------------------------------------------------------------------------------------------------------------------------------
+** Input feild
+<div>
+            <input type="text" placeholder="Enter text here" onChange={handleClick} />
+            <p>Text : {text}</p>
+        </div>
+
+    const [text,setText] = useState('')
+    const handleClick=(event)=>{
+        setText(event.target.value);
+    }
+------------------------------------------------------------------------------------------------------------------
+** Form Submit
+ex:
+<div>
+    <form onSubmit={handleSubmit}>
+            <h1>Enter name :</h1>
+            <input type="text" value={name} placeholder="Enter here!" onChange={(event)=>setname(event.target.value)} />
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+     </div>
+
+   const [name,setname]= useState('');
+    const handleSubmit=()=>{
+        alert(
+        `Form subitted by ${name}`
+        )
+    }
+- On clicking enter, on alert box, we see what we written on input feild
+---------------------------------------------------------------------------------------------------------------------------------------
+** Mouse event
+Mouse Enter and Mouse leave message on the console
+Ex:
+<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{
+    width:"200px", height:"400px", backgroundColor:"lightblue",alignItems:"center", lineHeight:"200px"
+}}></div>
+
+Function
+const handleMouseEnter=()=>{
+     console.log("Mouse Entered the box")
+
+}
+const handleMouseLeave=()=>{
+    console.log("Mouse left the boc")
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+** Key change 
+OnKeydown keyword - When we pressed the key
+
+        <h2>Keyboard Event</h2>
+        <h2>Enter :</h2>
+        <input type="text" onKeyDown={handleKey}/>
+    </div>
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+OnkeyUp keyword - when we pressed and then released the key, then this event occurs
+on just clicking the key, will not make change.
+      <h2>Keyboard Event</h2>
+        <h2>Enter :</h2>
+        <input type="text" OnkeyUp={handleKey}/>
+    </div>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+When we want the event occur, when we click on 1 particular key
+const handleKey=(event)=>{
+   if(event.key=="Enter")
+   {
+    alert("Welcome !")
+   }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

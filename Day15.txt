@@ -1,0 +1,33 @@
+FORM in react
+Its a box like structure, where user enters some information, it may be city, gender, name
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Need of form?
+We can collect and process the information entered by user
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Types
+-Uncontroller form
+-Controlled form
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+conntrolled form
+-where we store our form data inside the state , which is maintained by react or state
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Steps to create a controlled form
+- create a state       
+
+preventDefault - is to prevent a page from re-rendering, whenever we submit a form, after he alert message closed, the data shoulfn't erase
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uncontrolled form 
+-data is not maintained by react using state
+only using DOM elements
+data is accessed using useRef
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Form Validation
+Before sending data through server, validate that all data is entered properly, name, email
+
+-Manually
+-formic u
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-take name
+-email - .com 
+-password - minimum password length
+-confirm password and password should match then only submit

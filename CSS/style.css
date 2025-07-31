@@ -1,0 +1,34 @@
+/* h1,p{
+    color: chartreuse;
+    background-color: blue;
+    font-size:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline;
+    text-align:right;
+}
+
+.head1{
+    color:cyan
+
+}
+.head2{
+    color:crimson
+}
+.head3{
+    color: darksalmon;
+} */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    border: 2px solid black;
+    background-color: rgb(105, 89, 119);
+    gap: 20px;
+    padding: 20px;
+  
+}
+
+.box {
+    background-color: rgb(233, 214, 214);
+    color: chocolate;
+    padding: 20px;
+}

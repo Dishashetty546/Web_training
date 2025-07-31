@@ -1,0 +1,36 @@
+LIFECYCLE OF COMPONENT
+Different stages of react from creation to deletion is termed as react LIFECYCLE
+
+Major lifecycle phases in class COMPONENT
+-Mounting
+-Updating
+-Unmounting
+--------------------------------------------------------------------------------------------------------------------------------------
+Mounting
+-Component is created nd inserted in DOM is termed as Mounting
+
+steps / methods called
+Constructor() - we initialize the state and bind the methods
+static getDerivedStateFromProps() - sink state with props
+render() - return a JSX, user interface
+componentDidMount() - when component done mouning, run our sideeffects - subscriptions, Timers
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Updating
+-Component will get updated due to state and prop changes
+
+steps / methods
+static getDerivedStateFromProps() - sink state with props, method called again while updated
+shouldComponentUpdate() - decide hether to update component or not, if returnig true - updating, if return false - not updating
+render() - when a component mounted, again updated render is invoked again
+getSnapshotBeforeUpdate() - captures the dom value before update
+componentDidUpdate() - anything is required which need to be loaded along with updated data
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unmounting
+-When we remove component from the DOM is termed as Unmounting
+steps / methods
+componentsWillUnmount() - here we will cleanup out our timer, basically a cleanout task
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

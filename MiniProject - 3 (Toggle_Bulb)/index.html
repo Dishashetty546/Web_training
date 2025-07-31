@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on and off</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Bulb On/Off</title>
+</head>
+<body>
+
+<h1 class="head1">Welcome to my page:</h1>
+
+<img id="bulb" src="On_bulb.PNG" alt="Light Bulb">
+
+<br><br>
+
+<button id="b1" onclick="turnon()">Turn on</button>
+<button   onclick="turnoff()">Turn off</button>
+<script>
+  function turnon() {
+    let bulb = document.getElementById("bulb");
+    bulb.setAttribute("src", "On_bulb.PNG");
+
+}
+  function turnoff() {
+    let bulb = document.getElementById("bulb");
+    bulb.setAttribute("src", "Off_bulb.PNG");
+  }
+  
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,248 @@
+CSS - CASCADING STYLE SHEETS
+-giving styling to web page
+-style,font,space,boreders
+------------------------------------------------------------------------------------------
+types
+3 types
+-Inline
+-Internal
+-External
+
+Inline CSS
+On the HTML line
+ <p style="color: blue;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem!</p>
+
+Internal CSS 
+<style>
+        h1{
+            color:brown
+
+        }
+</style>
+CSS applied internally
+
+External CSS
+Create a new file: Style.css + put this line in head tag-<link rel="stylesheet" href="style.css" class="css">
+h2{
+    color: chartreuse;
+}
+------------------------------------------------------------------------------------------------------------
+when to use?
+if we want to target specific part of project - inline css - high priority
+If its a single/small project, want to update some tags together - Internal css
+Large project, multiple pages - External CSS
+------------------------------------------------------------------------------------------------------------
+Different types of selectors-
+* - all the elements
+elements - p - all paragraph
+#Id - specific paragraphs
+.class - specific class
+
+ex:
+-.head3{
+    color: darksalmon;
+}
+-h2{
+    color: chartreuse;
+}
+
+-group CSS
+h1,p{
+color:rgb(255, 12, 12)
+ }
+
+ -background color
+ h1{
+ background-color: blue;
+}
+------------------------------------------------------------------------------------------------------------
+Some other 
+
+CSScolor: chartreuse;
+background-color: blue;
+font-size:30px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: double;
+text-align: center;
+
+
+font size - to set font size
+text align - align text may be left,righ or center
+font color - to give font color
+background color - give a font background
+text decoration - underline, online ..etc
+-----------------------------------------------------------------------------------------------------------
+Layers to apply CSS in web page
+
+Margin - space outside to our boundary or box
+Border - Its a line around padding and content
+Padding - space b/w border nd content
+Content - info/whatever we want to display
+ 
+                         MARGIN
+                     -------------------
+                         BORDER
+                    ---------------------
+                          PADDING
+                       --------------
+                          CONTENT
+
+-------------------------------------------------------------------------------------------------------
+Create a Box using padding,margin,border..etc
+
+.container{
+    width:400px;
+    height:400px;
+    padding:20px;
+    border: 2px solid black;
+    margin: 30px;
+    background-color: rgb(112, 107, 100);
+    align-items: center;
+}
+
+Units in CSS
+px - pixels, fixed size
+% - relative size
+em - relative to font size
+rem - root relative font size
+
+--------------------------------------------------------------------------------------------------------------
+Layouts in CSS
+Display property
+ -block
+ -inline
+ -inline-block
+ -none
+ -Flex
+ -Grid
+
+ BLOCK - it will take entire block
+ inline - no width and no height
+ None - it will not display elements, hide completely
+ inline-block - inline but also has block also
+ Flex - 
+ Grid - into a grid container
+
+Ex:
+.container{
+    width:400px;
+    height:400px;
+    padding:20%;
+    border: 2px solid black;
+    margin: 30px;
+    background-color: rgb(112, 107, 100);
+    align-items: center;
+    display: inline;
+ 
+}
+---------------------------------------------------------------------------------------------------------------
+Positioning in CSS
+->Static- default normal 
+->relative - pretty normally behaves
+->Absolute- near to its ansectors
+->fixed - fixed when we move the cursor
+->Sticky - scroll noramally , but sticks to a postion when reaches center part.
+-------------------------------------------------------------------------------------
+Modern Layouts
+
+-Flexbox: one dimensional layout system o align items in row or column easily
+
+display:flex
+flex-direction
+jsutify-content horizontally
+align items vertically
+flex wrap
+-----------------------------------------------------------------------------------
+Grid
+display: grid
+grid-template-columns: repeat(2,1fr)
+where 2 is number od columns
+1fr is one part of the whole
+
+-----------------------------------------------------------------------------------
+features-
+make UI responsive
+styling
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+.head {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar .list {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Section */
+.section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Article */
+.article {
+    padding: 20px;
+    background-color: #e7e7e7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Aside */
+.aside {
+    padding: 20px;
+    background-color: #d9edf7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,208 @@
+JS - its a programming language, used to make web page interactive, or make page dynamic
+variables - container to store value  
+create
+ var
+ let
+ const 
+
+ scope of variables
+ local scope - var - functional scope
+ global scope - let and const 
+
+ if we use let it has local scope, and try to access globally
+ we get this error
+ -Uncaught ReferenceError: x is not defined
+    <anonymous> http://127.0.0.1:5500/Javascript/one.js:6
+
+ Node js: run time envirpnment to run js
+
+ Redeclaring variables
+ ---------------------------------------------------------------------------------------------------------------------------------------------
+diff b/w const and let, var?
+
+const can be initialized only once,it cant be reinitialized.
+Let and var can be reinitialized as many times as possible.
+
+if we try, we'll encounter 
+error: 40 one.js:11:9
+Uncaught TypeError: invalid assignment to const 'y'
+    <anonymous> http://127.0.0.1:5500/Javascript/one.js:12
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Version of JS?
+ESC
+----------------------------------------------------------------------------------------------------------------------------------
+Datatype in JS?
+type of a variables 
+
+Types?
+Primitive and non Primitive
+Primitive - Integer,boolean,undefined,null,BigInt,Symbol,String
+Non-primitve -  Array,objects,Functions
+---------------------------------------------------------------------------------------------------------------------------------------------
+Null vs undefined?
+Undefined - declared but not initialized
+null - declared and initialized by null/0
+--------------------------------------------------------------------------------------------------------------------------------------
+javascript is losely typed?
+no need to define the type of Data 
+Ex:
+let x = 42;         // x is a number
+x = "hello";        // now x is a string
+x = true;           // now x is a boolean
+------------------------------------------------------------------------------------------------------------------------------------------------
+console.log(typeof(a))  ?
+to get the type of variable
+
+//op: number
+-----------------------------------------------------------------------------------------------------------------------------------------
+Opeartors
+
+Arithmetic Opeartors
+Assignment Opeartors
+Comparision Opeartors
+Logical Opeartors
+Unary Opeartors
+Ternary Opeartors
+
+==,<=,>=,++.--
+------------------------------------------------------------------------------------------------------------------------------------
+diff b/w == and ===?
+ex: if(5=='5') --> true
+becuase it converts string to Integer -- type conversion
+loose equality
+
+ex: if(5==='5') --> false
+strict equality
+-----------------------------------------------------------------------------------------------------------------------------------
+Logical Operator?
+returns boolean value
+------------------------------------------------------------------------------------------------------------------------------------------------
+Unary Operator?
+-,+,--.++,!,&,sizeof()
+--------------------------------------------------------------------------------------------------------------------------------------------
+Ternary Operator?
+// let v=10;
+// let c= v>=10?"Disha":"Shetty";
+// console.log(c);
+------------------------------------------------------------------------------------------------------------------------------------------------
+Conditional statements?
+
+if
+if.. else..
+else.. if..
+---------------------------------------------------------------------------------------------------------------------------------------------
+For,while and do while loop?
+for - if we want exac no. of iterations
+while - if we have conditions to be satisfied
+do while - do while loop always runs at least once, but after the first run, it will keep executing as long as the condition is satisfied.
+-----------------------------------------------------------------------------------------------------------------------------
+Jump statements in JS?
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+Ex: for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+
+generate palindrome numbers from 1 to 1000
+function isPalindrome(num) {
+    const str = num.toString();
+    return str === str.split('').reverse().join('');
+}
+
+function getPalindromesUpTo(limit) {
+    const palindromes = [];
+    for (let i = 1; i <= limit; i++) {
+        if (isPalindrome(i)) {
+            palindromes.push(i);
+        }
+    }
+    return palindromes;
+}
+
+const palindromeNumbers = getPalindromesUpTo(1000);
+console.log(palindromeNumbers);
+
+function palindrome(arr) {
+    let st = 0;
+    let ed = arr.length - 1;
+    while (st < ed) {
+        if (arr[st] != arr[ed]) {
+            return false;
+        }
+        st++;
+        ed--;
+    }
+    return true;
+}
+
+function generatePalindromes() {
+    let result = [];
+    for (let i = 1; i <= 1000; i++) {
+        let digits = i.toString().split('').map(Number); // convert number to array of digits
+        if (palindrome(digits)) {
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+console.log(generatePalindromes());
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Arrays
+Collection of not a similar type of datatypes
+why array?
+we can store multiple variables at a time
+
+Ways to initialize array
+let num= [1,2,4,5,6,6]
+console.log(num);
+
+let num1=new Array(1,2,3,'yuhfjs')
+console.log(num1)
+
+modify array
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Length of an array?
+data.length
+For loop to iterate through the array
+-------------------------------------------------------------------------------------------------------
+for ..of
+let data= new Array(2,3,5,4,7)
+for(let x of data)
+{
+    console.log(x);
+}
+--------------------------------------------------------------------------------------------------------------------------------
+Some operations in JS
+[1,2,3,4]
+if we want to insert begineer of array use - push
+data.push(100);
+console.log(data)
+// 1,2,3,4,100
+
+if insert on end of an array - unshift
+data.unshift(100);
+console.log(data)
+
+pop- remove element from last index
+shift - remove element from first index
+
+data.shift();
+console.log(data)
+
+data.pop()
+console.log(data)
+
+indexOf - to give index of particular element
+------------------------------------------------------------------------------------------------------------------
+Use Sort keywork to reverse the array
+console.log(data.sort())
+----------------------------------------------------------------------------------------------------------------------------
+Reverse keyword
+data.reverse()
+------------------------------------------------------------------------------------------------------------
