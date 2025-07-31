@@ -1,0 +1,17 @@
+FORMIC AND YUP
+
+Formik: Handles form state, validation, and submission, making it easier to build scalable, complex forms.
+Yup: Offers schema-based validation with features like nested validation, custom error messages, and chaining validators.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REACT HOOK FORM
+
+Is more lightweight compared to FORMIC OR Yup
+      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-name - min 3 character
+-email
+-pass and confirm - 7 character password, password match
+-gender checkbox - radio button - one gender must
+-city - checkbox - one city is must
+-terms and condition for checking
+once everything is done submit it

@@ -25,7 +25,7 @@ Form Validation
 Before sending data through server, validate that all data is entered properly, name, email
 
 -Manually
--formic u
+-formic 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -take name
 -email - .com 
