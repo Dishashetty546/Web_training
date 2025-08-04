@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { FormContext } from '../context/FormContext';
 
-function Step4_EmergencyContacts({ onNext, onBack }) {
+function Step4_EmergencyContacts({ onNext }) {
   const { formData, setFormData } = useContext(FormContext);
   const [contacts, setContacts] = useState(formData.emergencyContacts || [{ name: '', relation: '', phone: '' }]);
   const [errors, setErrors] = useState([]);
@@ -53,7 +53,7 @@ function Step4_EmergencyContacts({ onNext, onBack }) {
         </div>
       ))}
       <button onClick={addContact}>Add Contact</button>
-      <button onClick={onBack}>Back</button>
+    
       <button onClick={handleNext}>Next</button>
     </div>
   );

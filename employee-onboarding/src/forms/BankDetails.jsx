@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { FormContext } from '../context/FormContext';
 import Input from '../components/Input';
 
-function Step3_BankDetails({ onNext, onBack }) {
+function Step3_BankDetails({ onNext }) {
   const { formData, setFormData } = useContext(FormContext);
   const [errors, setErrors] = useState({});
 
