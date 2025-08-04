@@ -7,7 +7,7 @@ LOCAL STORAGE
 -Data size approx 5MB
 -storing the data permanently
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-METHODS IN LOCAL STORAGE
+METHODS IN LOCAL STORAGE    
 -getitem() - get a particular data from the storage
 -setitem() - insert a partiicular item and store them , Stores data in the browser's localStorage under a specified key.
 -removeitem() - remove particular item from local storage
