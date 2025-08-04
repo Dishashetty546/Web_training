@@ -21,7 +21,7 @@ function Step5_UploadDocuments({ onNext, onBack }) {
   return (
     <div>
       <h2>Step 5: Upload Documents</h2>
-      <input type="file" accept="application/pdf" multiple onChange={handleFiles} />
+      <input type="file" accept="application/jpg" multiple onChange={handleFiles} />
       <ul>
         {files.map((file, i) => (
           <li key={i}>{file.name} <button onClick={() => removeFile(i)}>Remove</button></li>

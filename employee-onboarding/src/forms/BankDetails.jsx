@@ -33,9 +33,9 @@ function Step3_BankDetails({ onNext }) {
     <div>
       <h2>Step 3: Bank Details</h2>
       <Input label="Account Number" name="bankAcc" value={formData.bankAcc} onChange={handleChange} error={errors.bankAcc} />
-      <Input label="IFSC Code" name="ifsc" value={formData.ifsc} onChange={handleChange} error={errors.ifsc} />
-      <Input label="PAN Number" name="pan" value={formData.pan} onChange={handleChange} error={errors.pan} />
-      <Input label="UPI ID (optional)" name="upi" value={formData.upi} onChange={handleChange} error={errors.upi} />
+      <Input label="IFSC code" name="IFSC Code" value={formData.ifsc} onChange={handleChange} error={errors.length}/>
+      <Input label="PAN number" name="PAN number" value={formData.pan} onChange={handleChange} error={errors.length}/>
+      <Input label="UPI ID" name="UPI ID" value={formData.upi} onChange={handleChange} error={errors.length}/>
    
       <button onClick={handleNext}>Next</button>
     </div>
