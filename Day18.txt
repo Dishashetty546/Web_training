@@ -63,3 +63,5 @@ React UI rerenders with new state
 remove item
 more then one time, decrease the item by 1
 total price should be updated
+if there is more then one item in a list, increase the quantity instead of displaying again
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

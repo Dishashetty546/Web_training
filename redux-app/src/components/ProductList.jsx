@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
-import { addToCart } from  "../newone/Action.js"
+import { addToCart } from "../newone/Action.js";
+
 const products = [
   {
     id: 150,
@@ -32,12 +33,12 @@ function ProductList() {
         <div key={product.id} style={{ marginBottom: '10px' }}>
           <span>{product.name} :: {product.price}</span>
           <button
-            style={{ marginBottom: '10px'}}
+            style={{ marginBottom: '10px', marginLeft: '10px' }}
             onClick={() => handleAddToCart(product)}
           >
             ADD TO CART
           </button>
-     
+        
         </div>
       ))}
     </div>
