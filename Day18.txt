@@ -1,0 +1,65 @@
+Redux?
+- library which is used to manage state of our application
+- Data warehouse, all the data is stored and managed in a predictable way
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Why do we need?
+Mainly used to 
+all state is controlled centered 
+easy to use in large scale
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+when?
+there are multiple components, all components are sharing same data
+when we want to manage complex data flow
+when we are building large application
+predictable and testable states
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+when not to use?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+components of redux?
+store - holds entire data of our application
+action - discribes what happened
+reducer - decides how to change the state/data
+Dispatch - sends the action to the reducer
+UI(Subscriber) - UI react component which manages state/data
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+store
+-A warehouse in a redux app 
+-1 store in a redux app
+---------------------------------------
+action
+-That describes what we want to do
+-type of action, payload
+-type is required one
+-Payload is optional data
+----------------------------------------
+Reducer
+-Function that decides how to update state based on action
+----------------------------------------
+Dispatch
+-set an action to reducer
+
+-------------------------------------
+UI(subscriber) -> useseleter and useDispatch
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS
+When user click -> Button
+        |
+dispatch(send action)
+        |
+store receives action
+        |
+Reducer process action
+        |
+New state is retured to store
+        |
+React UI rerenders with new state
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Installaion
+
+ -npm install redux react-redux
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+remove item
+more then one time, decrease the item by 1
+total price should be updated
