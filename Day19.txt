@@ -1,0 +1,70 @@
+API 
+Application programming interface
+-set of rules or protocol that allows two software to communicate with each other
+ex: how E-commerce sites communicate with payment sites like Paythm/Google
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+REST API
+-Representational state transfer API
+-follow some rules or protocol to build scalable web services by using HTTP
+-Its a stateless  (stateless - Each API requess are unique, it remembers the previous requests)
+-It uses HTTP to send requests
+-HTTP is stateless
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLIENT AND SERVER
+Client - browser
+when user send requests
+
+Server - backend
+Receives, processes and respond back 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTTP METHODS
+POST - insert data
+PUT - update data
+GET - retrive data from server
+DELETE - delete data
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+URL - uniform resource locator
+Endpoints - url - api/users 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JSON - javascript object notation
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+POSTMAN 
+used to test REST API not all API
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Status code - 3 digit Number
+-200 - OK
+-201 - Created
+-204 - no content
+-400 - Bad request
+-401 - Unauthorized
+-500 - Internal server error
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Fetch - get api 
+useEffect
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+AXIOS 
+Promise based HTTP client 
+That can be used because of its cleaner syntax and additional features then FETCH
+
+-Install
+npm install axios
+---------------------------------------------------------------------------------------------------------------------------------------------------
+In fetch nd UseEffect - we have to convert the response to JSON
+In axios - we no need to convert to json, it is done automatically
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Middlewear
+-It sits bw dispatching an action and reducer
+-We can modify, delete before it reaches Middlewear
+
+Synchronous code
+-One by one. some functions will exicute
+
+Asynchronous operations
+-we need Middlewear
+
+In asynchronous operation, middlewear are present in bw action and reducer, which is an intersection
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error handling in react
+process of gracefully catching and managing the error inside our application
+so user do not get blank space
+crashes or un-informative messages 
