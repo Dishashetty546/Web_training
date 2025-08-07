@@ -17,6 +17,8 @@ import './App.css'
 // import UserAxios from './api/UserAxios.jsx'
 // import Fetch from './middlewear/Fetch.jsx';
 import HandleError from './error/HandleError'
+import ErrorBoundary from './error/ErrorBoundary.jsx';
+import Second from './error/Second.jsx';
 function App() {
   return (
     // <BrowserRouter>
@@ -63,7 +65,17 @@ function App() {
       {/* <User/> */}
   {/* <UserAxios/> */}
   {/* <Fetch/> */}
-  <HandleError name='disha'/>
+<h1>error handle</h1>
+<h1>Error handle</h1>
+
+<ErrorBoundary>
+    <HandleError name="First Component" />
+</ErrorBoundary>
+
+<ErrorBoundary>
+    <Second />
+</ErrorBoundary>
+
     </div>
   )
 }

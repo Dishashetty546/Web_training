@@ -1,0 +1,21 @@
+ERROR BOUNDARY
+
+-class component, that catches error anywhere in child component
+-Log those error and display a UI, instead of blank screen
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+When we have to handle errors of multiple components all together - then we use ErrorBoundary
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TypeScript
+Detecting the bug in earlier stage
+Array
+variables
+Objects
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+props
+FC - functional component
+Inteface in props - when we want to pass multiple values
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+use TSX in javascript project
+
+install this in react project
+-npm install @types/react @types/react-dom
