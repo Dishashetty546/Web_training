@@ -1,0 +1,8 @@
+TESTING
+Writing the code to check , whether application is working the way we expect
+
+JEST - testing frameworks, its a tool that runs our test, result would be pass or fail
+RTL - Reat testing Library  - help us to test react component, the wat real users will be using, it mainly focus on what  users see 
+
+-=------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create application by CRA tool
