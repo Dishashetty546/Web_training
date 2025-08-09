@@ -1,0 +1,51 @@
+Testing in Vite application
+
+steps to do this
+------------------------------------------------------------------------------------------
+1. npm install --save-dev @testing-library/react @testing-library/jest-dom
+2. npm install --save-dev @testing-library/dom
+3. npm install --save-dev jest jest-environment-jsdom
+---------------------------------------------------------------------------
+jest.config.js
+module.exports = {
+collectCoverage: true,
+collectCoverageFrom: [&#39;src/**/*.{js,jsx}&#39;],
+coverageDirectory: &#39;coverage&#39;,
+testEnvironment: &#39;jsdom&#39;,
+}
+updated one :....
+export default {
+collectCoverage: true,
+collectCoverageFrom: [&#39;src/**/*.{js,jsx}&#39;],
+coverageDirectory: &#39;coverage&#39;,
+testEnvironment: &#39;jsdom&#39;,
+transform: {
+&#39;^.+\\.[jt]sx?$&#39;: &#39;babel-jest&#39;,
+},
+setupFilesAfterEnv: [&#39;&lt;rootDir&gt;/jest.setup.js&#39;],
+}
+-----------------------------------------------------------------
+jest.setup.js
+import &#39;@testing-library/jest-dom&#39;
+------------------------------------------------------------------
+package.json
+&quot;test&quot;: &quot;jest&quot;,
+&quot;coverage&quot;: &quot;jest --coverage&quot;
+---------------------------------------------------------------------
+
+babel install
+npm install --save-dev @babel/preset-env @babel/preset-react babel-jest
+---------------------------------------------------------------------------
+Create babel.config.js
+module.exports={
+presets: [
+[&#39;@babel/preset-env&#39;, { targets: { node: &#39;current&#39; } }],
+[&#39;@babel/preset-react&#39;, { runtime: &#39;automatic&#39; }],
+],
+};
+-----------------------------------------------------------------------------------------------
+moduleNameMapper: {
+&quot;\\.(css|less|scss|sass)$&quot;: &quot;identity-obj-proxy&quot;
+},
+
+--------------------------------------------------------
